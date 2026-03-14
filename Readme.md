@@ -1,0 +1,1 @@
+Olá, esse repositorio é direcionado à aula de estruturas de dados.

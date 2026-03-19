@@ -74,3 +74,5 @@ class ListaLigada {
         console.log(resultado);
     }
 }
+
+export default listaLigada;

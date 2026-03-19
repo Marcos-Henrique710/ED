@@ -20,12 +20,20 @@
   "directories": {
     "doc": "docs"
   },
-  	"scripts": {
-		"test": "jest",
-		"docs": "jsdoc -c jsdoc.json"
-	},
+  "scripts": {
+    "test": "jest",
+    "docs": "jsdoc -c jsdoc.json"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcos-Henrique710/ED.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marcos-Henrique710/ED/issues"
+  },
+  "homepage": "https://github.com/Marcos-Henrique710/ED#readme"
 }

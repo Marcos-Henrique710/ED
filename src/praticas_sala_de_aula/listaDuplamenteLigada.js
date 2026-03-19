@@ -120,3 +120,5 @@ class filaDuplamenteLigada {
         }
     }
 }
+
+export default listaDuplamenteLigada;

@@ -63,3 +63,5 @@ class FilaCircular {
         console.log(resultado.join(" <- "));
     }
 }
+
+export default filaCircular;

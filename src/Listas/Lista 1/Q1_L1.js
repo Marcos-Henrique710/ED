@@ -9,10 +9,12 @@ class Pilha {
         this.itens = [];
     }
 
+    // Adiciona um elemento ao topo da pilha
     push(elemento) {
         this.itens.push(elemento);
     }
 
+    // Remove e retorna o elemento do topo da pilha
     pop() {
         if (this.isEmpty()) {
             return null;
@@ -20,14 +22,17 @@ class Pilha {
         return this.itens.pop();
     }
 
+    // Verifica se a pilha está vazia
     isEmpty() {
         return this.itens.length === 0;
     }
 
+    // Retorna o número de elementos na pilha
     size() {
         return this.itens.length;
     }
 
+    // Retorna o elemento do topo da pilha sem removê-lo
     peek() {
         if (this.isEmpty()) {
             return null;
@@ -35,6 +40,7 @@ class Pilha {
         return this.itens[this.itens.length - 1];
     }
 
+    // Função para inverter uma palavra usando a pilha
     inverte(palavra) {
         const pilha = new Pilha();
         for (let i = 0; i < palavra.length; i++) {
@@ -47,3 +53,13 @@ class Pilha {
         return resultado;
     }
 }
+
+let palavra = "";
+console.log("Digite uma palavra:");
+
+// Lê a entrada do usuário e inverte a palavra usando a função inverte da pilha
+process.stdin.on("data", (data) => {
+    palavra = data.toString().trim();
+    const pilha = new Pilha();
+    console.log("Palavra invertida:", pilha.inverte(palavra));
+});

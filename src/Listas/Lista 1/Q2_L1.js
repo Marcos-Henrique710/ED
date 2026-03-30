@@ -20,14 +20,17 @@ class PilhaCompartilhada {
         this.topoB = tamanho;
     }
 
+    // Verifica se a pilha A está vazia
     isEmptyA() {
         return this.topoA === -1;
     }
 
+    // Verifica se a pilha B está vazia
     isEmptyB() {
         return this.topoB === this.tamanho;
     }
 
+    // Empilha um elemento na pilha A
     empilhaA(elemento) {
         if (this.topoA + 1 === this.topoB) {
             console.log("Erro: vetor cheio!");
@@ -36,6 +39,7 @@ class PilhaCompartilhada {
         this.vetor[++this.topoA] = elemento;
     }
 
+    // Empilha um elemento na pilha B
     empilhaB(elemento) {
         if (this.topoA + 1 === this.topoB) {
             console.log("Erro: vetor cheio!");
@@ -44,6 +48,7 @@ class PilhaCompartilhada {
         this.vetor[--this.topoB] = elemento;
     }
 
+    // Desempilha um elemento da pilha A
     desempilhaA() {
         if (this.isEmptyA()) {
             console.log("Pilha A vazia!");
@@ -52,6 +57,7 @@ class PilhaCompartilhada {
         return this.vetor[this.topoA--];
     }
 
+    // Desempilha um elemento da pilha B
     desempilhaB() {
         if (this.isEmptyB()) {
             console.log("Pilha B vazia!");

@@ -59,3 +59,5 @@ class pilha {
         return this.length() === this.capacidade;
     }
 }
+
+export default pilha;

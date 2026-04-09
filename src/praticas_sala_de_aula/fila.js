@@ -59,3 +59,5 @@ class Fila {
         console.log(resultado.join(" <- "));
     }
 }
+
+export default Fila;
